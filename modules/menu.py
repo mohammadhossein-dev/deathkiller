@@ -19,5 +19,5 @@ def banner():
                             \|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||/
     """
     
-    print(Fore.RED+msg_banner)
-    print(Fore.LIGHTGREEN_EX+msg_credit)
+    print(Fore.RED+msg_banner+Fore.RESET)
+    print(Fore.LIGHTGREEN_EX+msg_credit+Fore.RESET)

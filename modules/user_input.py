@@ -11,8 +11,8 @@ def get_user_input():
     if target_url.startswith("http://") or target_url.startswith("https://"):
         pass
     else:
-        print(Fore.RED+"[*] "+Fore.LIGHTRED_EX+"Please Enter the target URL with http:// or https:// and try again")
-        print(Fore.RED+"[*] "+Fore.LIGHTRED_EX+"Exiting the app ...")
+        print(Fore.RED+"[*] "+Fore.LIGHTRED_EX+"Please Enter the target URL with http:// or https:// and try again"+Fore.RESET)
+        print(Fore.RED+"[*] "+Fore.LIGHTRED_EX+"Exiting the app ..."+Fore.RESET)
         exit()
 
     global requests_count
