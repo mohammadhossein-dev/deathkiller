@@ -15,9 +15,14 @@ def get_user_input():
         print(Fore.RED+"[*] "+Fore.LIGHTRED_EX+"Exiting the app ..."+Fore.RESET)
         exit()
 
-    global requests_count
-    requests_count = int(input(Fore.GREEN+"[!] "+Fore.CYAN+"How many requests do you want to send to "+Fore.LIGHTRED_EX+target_url+Fore.CYAN+" (>0) => "+Fore.RED).strip())
-    while requests_count <= 0 or requests_count is None:
-        requests_count = int(input(Fore.GREEN + "[!] " + Fore.CYAN + "How many requests do you want to send to " + Fore.LIGHTRED_EX + target_url + Fore.CYAN + " => " + Fore.RED).strip())
+    try :
+        global requests_count
+        requests_count = input(Fore.GREEN+"[!] "+Fore.CYAN+"How many requests do you want to send to "+Fore.LIGHTRED_EX+target_url+Fore.CYAN+" (>0) => "+Fore.RED).strip()
+        while requests_count is None or int(requests_count) <= 0:
+            requests_count = input(Fore.GREEN + "[!] " + Fore.CYAN + "How many requests do you want to send to " + Fore.LIGHTRED_EX + target_url + Fore.CYAN + " => " + Fore.RED).strip()
 
-
+        requests_count = int(requests_count)
+    except:
+        print(Fore.RED+"[*] Please Enter a valid number which is bigger than 0!")
+        print(Fore.RED+"[*] Exiting the app ..."+Fore.RESET)
+        exit()
