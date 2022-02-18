@@ -19,4 +19,11 @@ or if in linux didn't work try these : <br>
 pip3 install requests <br>
 pip3 install colorama <br>
 
+<br>
+<br>
+<br>
+
+A View of the tool : <br>
+<img src="screenshot.png">
+
 Good luck!
