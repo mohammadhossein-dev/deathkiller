@@ -8,7 +8,7 @@ This tool needs these packages :
 requests <br>
 colorama
 
-To install these two run the following in your cms/terminal : <br>
+To install these two run the following in your cmd/terminal : <br>
 
 
 pip install requests <br>
